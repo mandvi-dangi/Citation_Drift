@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factsens"
+version = "0.1.0"
+description = "Scoring-rule sensitivity of scientific-factuality benchmarks"
+requires-python = ">=3.9"
+dependencies = ["numpy", "requests"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+hf = ["torch", "transformers", "accelerate"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

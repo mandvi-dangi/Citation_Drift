@@ -1,0 +1,11 @@
+{
+  "seed": 0,
+  "n_boot": 1000,
+  "min_models": 6,
+  "max_items": null,
+  "datasets": ["data/science_mcq.jsonl"],
+  "models": [
+    {"name": "model_a", "type": "openai_compat", "model": "REPLACE_WITH_MODEL_ID", "base_url": "http://localhost:11434/v1"},
+    {"name": "model_b", "type": "hf", "model": "REPLACE_WITH_HF_MODEL_ID"}
+  ]
+}
